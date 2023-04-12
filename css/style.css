@@ -816,8 +816,8 @@ form p{
     /* iframes-esports*/
     
     .E-Sports iframe{
-        width: 75%;
-        height: 70%;
+        width: 65%;
+        height: 60%;
     }
     
     /* imagenes-esports */
@@ -830,8 +830,8 @@ form p{
     }
            
     .E-Sports img{
-        width: 90%;
-        height: 70%;
+        width: 65%;
+        height: 60%;
 
     }
 }
