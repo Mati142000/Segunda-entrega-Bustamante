@@ -1,0 +1,78 @@
+/* grilla */
+
+.grilla-1{
+    display:grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'area0' 
+    'area1'
+    'area2'
+    'area3'
+    'area4';
+    justify-content: center;
+    border: 5px solid rgb(210, 199, 199);
+}
+
+/* cajas */
+
+.caja{
+    background-color: rgb(56, 139, 206);
+    padding:30px;
+}
+
+.c0{
+    grid-area: area0;
+    margin-top: 80px;
+}
+
+
+.c1{
+    
+    grid-area: area1;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+.c2{
+    grid-area: area2;
+    font-size: 30px;
+}
+
+
+.c3{
+    grid-area: area3;
+}
+
+.c4{
+    display: flex;
+    grid-area: area4;
+}
+
+/* imagenes */
+
+.imagen-cuerpo img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-item img{
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+}
+/*  texto  */
+
+.texto-cuerpo{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* main */
+
+main{
+    background-image: url(../multimedia/imagines/segundo-intento-foto.avif);
+}
