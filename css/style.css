@@ -45,7 +45,7 @@ footer ul {
 }
 
 .nav-list {
-  background-image: url(../multimedia/imagines/que-son-los-esports-interior.jpg);
+  background-image: url(../multimedia/imagines/iniciopapu.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -179,6 +179,11 @@ main {
 /* textos */
 form p {
   font-size: 20px;
+}
+
+.conocenos {
+  font-size: 20px;
+  text-align: justify;
 }
 
 /* ARRANCAMOS CON DISCOGRAFIA */
@@ -387,6 +392,7 @@ form p {
 .noticias {
   width: 600px;
   height: 300px;
+  border-radius: 10px;
 }
 
 /* textos */
@@ -397,10 +403,15 @@ form p {
 .texto-noticias p {
   text-align: left;
   font-size: 20px;
+  text-align: center;
 }
 
 .texto-noticias a {
   color: rgb(0, 0, 0);
+}
+
+.li-noticias {
+  font-size: 20px;
 }
 
 /* media queries */
@@ -424,6 +435,12 @@ form p {
     align-items: center;
     margin-bottom: 0;
     height: 700px;
+  }
+  .principal {
+    display: none;
+  }
+  .navbar-dark {
+    display: flex;
   }
   .c0 {
     grid-area: area0;
@@ -553,6 +570,12 @@ form p {
     margin-bottom: 0;
     height: 200px;
   }
+  #navbarToggleExternalContent {
+    display: none;
+  }
+  .navbar-dark {
+    display: none;
+  }
   .c0 {
     grid-area: area0;
     margin-top: 80px;
@@ -674,6 +697,12 @@ form p {
   }
 }
 @media (min-width: 1001px) and (max-width: 1500px) {
+  #navbarToggleExternalContent {
+    display: none;
+  }
+  .navbar-dark {
+    display: none;
+  }
   /* ARRANCAMOS CON E-Sports */
   .grilla-2 {
     display: grid;
@@ -734,6 +763,14 @@ form p {
   .E-Sports img {
     width: 350px;
     height: 250px;
+  }
+}
+@media (min-width: 1501px) {
+  #navbarToggleExternalContent {
+    display: none;
+  }
+  .navbar-dark {
+    display: none;
   }
 }
 

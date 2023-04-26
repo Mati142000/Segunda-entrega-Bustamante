@@ -1,7 +1,6 @@
 /* media queries */
 
 @media (min-width:320px) and (max-width:700px) {
-
     nav{
         align-items: center;
         justify-content: center;
@@ -11,6 +10,7 @@
         margin-left: 70px;
         font-size: 30px;
         position:absolute;
+        
     }
 
     .nav-list{
@@ -23,6 +23,15 @@
         align-items: center;
         margin-bottom: 0;
         height: 700px;
+    }
+
+    .principal{
+        display: none;
+    }
+
+
+    .navbar-dark{
+        display: flex;
     }
 
     .c0{
@@ -200,6 +209,14 @@
         height: 200px;
     }
 
+    #navbarToggleExternalContent{
+        display: none;
+    }
+
+    .navbar-dark{
+        display: none;
+    }
+
     .c0{
         grid-area: area0;
         margin-top: 80px;
@@ -366,6 +383,15 @@
 }
 
 @media (min-width:1001px) and (max-width:1500px) {
+
+    #navbarToggleExternalContent{
+        display: none;
+    }
+
+    .navbar-dark{
+        display: none;
+    }
+
     /* ARRANCAMOS CON E-Sports */
 
     .grilla-2{
@@ -451,4 +477,15 @@
         height: 250px;
 
     }    
+}
+
+@media (min-width:1501px) {
+        #navbarToggleExternalContent{
+        display: none;
+    }
+
+    .navbar-dark{
+        display: none;
+    }
+    
 }

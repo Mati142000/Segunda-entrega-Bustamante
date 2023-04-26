@@ -47,6 +47,7 @@
 .noticias{
     width: 600px;
     height: 300px;
+    border-radius: 10px;
 }
 
 /* textos */
@@ -58,8 +59,13 @@
 .texto-noticias p{
     text-align: left;
     font-size: 20px;
+    text-align: center;
 }
 
 .texto-noticias a{
     color: rgb(0, 0, 0);
+}
+
+.li-noticias{
+    font-size: 20px;
 }
