@@ -27,6 +27,10 @@ footer ul {
   list-style-type: none;
 }
 
+.footer {
+  margin-left: 40px;
+}
+
 .logo {
   position: absolute;
   color: rgb(245, 244, 244);
@@ -234,8 +238,8 @@ form p {
 
 /* iframe Discografia */
 .spotify {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 400px;
 }
 
 /* ARRANCAMOS CON E-Sports */
@@ -423,7 +427,15 @@ form p {
   .logo {
     margin-left: 70px;
     font-size: 30px;
-    position: absolute;
+    position: relative;
+    font-size: 20px;
+  }
+  .logo a {
+    width: 30px;
+    height: 30px;
+  }
+  .logo-footer {
+    display: none;
   }
   .nav-list {
     background-image: url(../multimedia/imagines/que-son-los-esports-interior.jpg);
@@ -441,6 +453,10 @@ form p {
   }
   .navbar-dark {
     display: flex;
+  }
+  .footer {
+    margin-left: 40px;
+    font-size: 20px;
   }
   .c0 {
     grid-area: area0;
@@ -494,6 +510,31 @@ form p {
   }
   footer h4 {
     font-size: 20px;
+  }
+  /*  arrancamos con noticias */
+  .noticias {
+    width: 100%;
+    height: 150px;
+  }
+  /* arrancamos con galeria */
+  .grilla-1-1 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    grid-template-areas: "area0" "area1" "area2" "area3" "area4";
+    justify-content: center;
+    border-top: 5px solid rgb(210, 199, 199);
+    border-left: 5px solid rgb(210, 199, 199);
+    border-right: 5px solid rgb(210, 199, 199);
+  }
+  .grilla-1-2 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    grid-template-areas: "area0" "area1" "area2" "area3" "area4";
+    justify-content: center;
+    border-left: 5px solid rgb(210, 199, 199);
+    border-right: 5px solid rgb(210, 199, 199);
   }
   /* ARRANCAMOS CON E-Sports */
   .grilla-2 {
@@ -552,6 +593,40 @@ form p {
   .c00 img {
     width: 80%;
   }
+  /*  arrancamos con conocenos */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario form {
+    width: 100%;
+  }
+  /* arrancamos con discografia */
+  .grilla-3 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    grid-template-areas: "area0" "area1" "area2" "area5" "area3" "area4" "area6";
+    justify-content: center;
+    border: 5px solid rgb(210, 199, 199);
+  }
+  .spotify {
+    width: 100%;
+    height: 400px;
+  }
+  /* footer */
+  footer div {
+    display: flex;
+    flex-direction: row;
+  }
+  footer div li {
+    font-size: 25px;
+  }
+  footer div a {
+    width: 20%;
+    height: 20%;
+    margin-left: 70px;
+  }
 }
 @media (min-width: 701px) and (max-width: 1000px) {
   .logo {
@@ -575,6 +650,18 @@ form p {
   }
   .navbar-dark {
     display: none;
+  }
+  footer div {
+    display: flex;
+    flex-direction: row;
+  }
+  footer div li {
+    font-size: 25px;
+  }
+  footer div a {
+    width: 20%;
+    height: 20%;
+    margin-left: 70px;
   }
   .c0 {
     grid-area: area0;
@@ -629,6 +716,44 @@ form p {
   }
   footer h4 {
     font-size: 20px;
+  }
+  /* arrancamos con noticias */
+  .noticias {
+    width: 80%;
+    height: 250px;
+  }
+  /* arrancamos con discografia */
+  .grilla-3 {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    grid-template-areas: "area0" "area1" "area2" "area3" "area4" "area5" "area6";
+    justify-content: center;
+    border: 5px solid rgb(210, 199, 199);
+  }
+  .spotify {
+    width: 100%;
+    height: 400px;
+  }
+  /* arrancamos con galeria */
+  .grilla-1-1 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    grid-template-areas: "area0" "area1" "area2" "area3" "area4";
+    justify-content: center;
+    border-top: 5px solid rgb(210, 199, 199);
+    border-left: 5px solid rgb(210, 199, 199);
+    border-right: 5px solid rgb(210, 199, 199);
+  }
+  .grilla-1-2 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    grid-template-areas: "area0" "area1" "area2" "area3" "area4";
+    justify-content: center;
+    border-left: 5px solid rgb(210, 199, 199);
+    border-right: 5px solid rgb(210, 199, 199);
   }
   /* ARRANCAMOS CON E-Sports */
   .grilla-2 {
@@ -703,6 +828,51 @@ form p {
   .navbar-dark {
     display: none;
   }
+  footer div {
+    display: flex;
+    flex-direction: row;
+  }
+  footer div li {
+    font-size: 25px;
+  }
+  footer div a {
+    width: 20%;
+    height: 20%;
+    margin-left: 70px;
+  }
+  /* arrancamos con discografia */
+  .grilla-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: auto;
+    grid-template-areas: "area0 area0" "area1 area4" "area2 area5" "area3 area6";
+    justify-content: center;
+    border: 5px solid rgb(210, 199, 199);
+  }
+  .spotify {
+    width: 100%;
+    height: 400px;
+  }
+  /* arrancamos con galeria */
+  .grilla-1-1 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    grid-template-areas: "area0" "area1" "area2" "area3" "area4";
+    justify-content: center;
+    border-top: 5px solid rgb(210, 199, 199);
+    border-left: 5px solid rgb(210, 199, 199);
+    border-right: 5px solid rgb(210, 199, 199);
+  }
+  .grilla-1-2 {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    grid-template-areas: "area0" "area1" "area2" "area3" "area4";
+    justify-content: center;
+    border-left: 5px solid rgb(210, 199, 199);
+    border-right: 5px solid rgb(210, 199, 199);
+  }
   /* ARRANCAMOS CON E-Sports */
   .grilla-2 {
     display: grid;
@@ -771,6 +941,18 @@ form p {
   }
   .navbar-dark {
     display: none;
+  }
+  footer div {
+    display: flex;
+    flex-direction: row;
+  }
+  footer div li {
+    font-size: 30px;
+  }
+  footer div a {
+    width: 20%;
+    height: 20%;
+    margin-left: 70px;
   }
 }
 
