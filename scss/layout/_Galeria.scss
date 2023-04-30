@@ -54,3 +54,8 @@
     width:100%;
     border-radius: 15px;
 }
+
+.galeria:hover{
+    transform: scale(1.05,1.05);
+    transition:0.7s;
+}

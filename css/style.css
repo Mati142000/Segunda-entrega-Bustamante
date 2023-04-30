@@ -42,7 +42,6 @@ footer ul {
   padding: 10px;
   text-decoration: none;
 }
-
 .logo img {
   width: 80px;
   height: 80px;
@@ -58,7 +57,6 @@ footer ul {
   margin-bottom: 0;
   height: 120px;
 }
-
 .nav-list li {
   list-style-type: none;
   display: inline-block;
@@ -67,10 +65,13 @@ footer ul {
   background-color: #5a81e4;
   border-radius: 20px;
 }
-
 .nav-list li a {
   color: rgb(248, 247, 247);
   text-decoration: none;
+}
+.nav-list li a:hover {
+  text-decoration: underline;
+  transition: 1;
 }
 
 /* grilla */
@@ -148,46 +149,40 @@ main {
   justify-content: center;
   border: 5px solid rgb(210, 199, 199);
 }
-
-.c-00 {
+.grilla-5 .c-00 {
   grid-area: area0;
   margin-top: 80px;
 }
-
-.c-00 h2 {
+.grilla-5 .c-00 h2 {
   padding: 40px;
 }
-
-.c-00 form {
-  padding: 40px;
-}
-
-.c-11 {
-  grid-area: area1;
-}
-
-.formulario {
+.grilla-5 .c-00 .formulario {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
-
-.formulario form {
+.grilla-5 .c-00 .formulario form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   text-align: left;
-  width: 400px;
 }
-
-/* textos */
-form p {
+.grilla-5 .c-00 .formulario p {
   font-size: 20px;
 }
-
-.conocenos {
+.grilla-5 .c-00 form {
+  padding: 40px;
+}
+.grilla-5 .c-11 {
+  grid-area: area1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grilla-5 .c-11 .conocenos {
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
+  width: 80%;
 }
 
 /* ARRANCAMOS CON DISCOGRAFIA */
@@ -354,6 +349,11 @@ form p {
   border-radius: 15px;
 }
 
+.galeria:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.7s;
+}
+
 /* ARRANCAMOS CON NOTICIAS */
 .grilla-4 {
   display: grid;
@@ -424,13 +424,13 @@ form p {
     align-items: center;
     justify-content: center;
   }
-  .logo {
+  nav .logo {
     margin-left: 70px;
     font-size: 30px;
     position: relative;
     font-size: 20px;
   }
-  .logo a {
+  nav .logo a {
     width: 30px;
     height: 30px;
   }
@@ -595,11 +595,21 @@ form p {
   }
   /*  arrancamos con conocenos */
   .formulario {
-    display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .formulario form {
-    width: 100%;
+    align-items: center;
+  }
+  .formulario form input {
+    width: 70%;
+  }
+  .formulario textarea {
+    width: 70%;
+  }
+  .formulario img {
+    width: 80%;
+    height: 100%;
   }
   /* arrancamos con discografia */
   .grilla-3 {
@@ -821,6 +831,25 @@ form p {
     height: 60%;
   }
 }
+/* ARRANCA CONOCENOS */
+.formulario {
+  flex-direction: column;
+  align-items: center;
+}
+.formulario img {
+  width: 80%;
+}
+.formulario form {
+  width: 100%;
+  align-items: center;
+}
+.formulario form input {
+  width: 80%;
+}
+.formulario form textarea {
+  width: 80%;
+}
+
 @media (min-width: 1001px) and (max-width: 1500px) {
   #navbarToggleExternalContent {
     display: none;
@@ -935,6 +964,31 @@ form p {
     height: 250px;
   }
 }
+/* ARRANCA CONOCENOS */
+c-00 {
+  display: flex;
+}
+c-00 flex-direction h1 {
+  width: 100%;
+}
+c-00 .formulario {
+  flex-direction: column;
+  align-items: center;
+}
+c-00 .formulario img {
+  width: 70%;
+}
+c-00 .formulario form {
+  width: 100%;
+  align-items: center;
+}
+c-00 .formulario form input {
+  width: 80%;
+}
+c-00 .formulario form textarea {
+  width: 80%;
+}
+
 @media (min-width: 1501px) {
   #navbarToggleExternalContent {
     display: none;
